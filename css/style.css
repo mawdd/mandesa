@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+.c1 {
+  position: absolute;
+  overflow: visible;
+  width: 200px;
+  height: 200px;
+  left: 60px;
+  top: 545px;
+}
+.ecs_red {
+  position: absolute;
+  overflow: visible;
+  width: 123px;
+  height: 123px;
+  left: 481px;
+  top: -61px;
+}
+.body {
+  font-family: "Open Sans", sans-serif;
+}
+.jumbotron {
+  margin-top: 100px;
+  background: transparent !important;
+}
+.jumbotron h1 {
+  text-align: center;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 44px;
+  color: rgba(0, 0, 0, 1);
+  animation-delay: 800ms;
+}
+.jumbotron p {
+  line-height: 22px;
+  margin-top: -2px;
+  text-align: center;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: rgba(126, 126, 126, 1);
+  animation-delay: 1200ms;
+}
+.ecs_ijo {
+  position: absolute;
+  overflow: visible;
+  width: 301px;
+  height: 301px;
+  left: 1216px;
+  top: 113px;
+}
+.ecs_yellow {
+  position: absolute;
+  overflow: visible;
+  width: 51px;
+  height: 51px;
+  left: 200px;
+  top: 150px;
+}
+.Path_76 {
+  overflow: visible;
+  position: absolute;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.vl {
+  border-left: 2px solid black;
+  height: 50px;
+}
+.karir h1 {
+  text-align: center;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+}
+.karir p {
+  font: Semibold 18px/27px Open Sans;
+  letter-spacing: 0;
+  color: #4d4c4c;
+  opacity: 1;
+}
+.karir {
+  animation-delay: 3s;
+}
+.section {
+  margin-top: 60px;
+}
+
+.grid-content img {
+  width: 352px;
+  height: 211px;
+  box-shadow: 0px 2.5px 8px #0000001a;
+  border-radius: 10px;
+  opacity: 1;
+}
+.grid-content div {
+  margin-top: 8px;
+}
+.nav-item,
+.dropdown-item {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: SemiBold;
+  font-size: 16px;
+}
