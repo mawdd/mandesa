@@ -12,6 +12,8 @@
       rel="stylesheet"
     />
   <link rel="stylesheet" href="/css/animate.css">
+  <link rel="stylesheet" href="/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -162,7 +164,53 @@
        </div>
       </div>
       </div>
+      <div class="section">
+       <div class="karir">
+        <h1>Galeri</h1>
+        <hr>
+        <br>
+       </div>
+       <p class="text-center"> <b>Pemasangan Wifi</b> </p>
+       <div class="owl-carousel">
+        <div> <img src="/img/Rectangle_54@2x.png" alt=""> </div>
+        <div> <img src="/img/Rectangle_54@2x.png" alt=""> </div>
+        <div> <img src="/img/Rectangle_54@2x.png" alt=""> </div>
+        <div> <img src="/img/Rectangle_54@2x.png" alt=""> </div>
+        <div> <img src="/img/Rectangle_54@2x.png" alt=""> </div>
+        <div> <img src="/img/Rectangle_54@2x.png" alt=""> </div>
+        <div> <img src="/img/Rectangle_54@2x.png" alt=""> </div>
+      </div>    
+      <p class="text-center"> <b>Pelatihan SID</b> </p>
+       <div class="owl-carousel">
+        <div> <img src="/img/Rectangle_54@2x.png"> </div>
+        <div> <img src="/img/Rectangle_54@2x.png"> </div>
+        <div> <img src="/img/Rectangle_54@2x.png"> </div>
+        <div> <img src="/img/Rectangle_54@2x.png"> </div>
+        <div> <img src="/img/Rectangle_54@2x.png"> </div>
+        <div> <img src="/img/Rectangle_54@2x.png"> </div>
+        <div> <img src="/img/Rectangle_54@2x.png"> </div>
+      </div> 
+     </div>     
+    <div class="photo-gallery">
+     <div class="container">
+     <div class="intro">
+         <h2 class="text-center">Lightbox Gallery</h2>
+         <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
      </div>
+     <div class="row photos">
+         <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="http://127.0.0.1:5500/img/Rectangle_54@2x.png" data-lightbox="photos"><img class="img-fluid" src="http://127.0.0.1:5500/img/Rectangle_54@2x.png"></a></div>
+         <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="http://127.0.0.1:5500/img/Rectangle_54@2x.png" data-lightbox="photos"><img class="img-fluid" src="http://127.0.0.1:5500/img/Rectangle_54@2x.png"></a></div>
+         <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="http://127.0.0.1:5500/img/Rectangle_54@2x.png" data-lightbox="photos"><img class="img-fluid" src="http://127.0.0.1:5500/img/Rectangle_54@2x.png"></a></div>
+         <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="http://127.0.0.1:5500/img/Rectangle_54@2x.png" data-lightbox="photos"><img class="img-fluid" src="http://127.0.0.1:5500/img/Rectangle_54@2x.png"></a></div>
+         <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="http://127.0.0.1:5500/img/Rectangle_54@2x.png" data-lightbox="photos"><img class="img-fluid" src="http://127.0.0.1:5500/img/Rectangle_54@2x.png"></a></div>
+         <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="http://127.0.0.1:5500/img/Rectangle_54@2x.png" data-lightbox="photos"><img class="img-fluid" src="http://127.0.0.1:5500/img/Rectangle_54@2x.png"></a></div>
+         <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="http://127.0.0.1:5500/img/Rectangle_54@2x.png" data-lightbox="photos"><img class="img-fluid" src="http://127.0.0.1:5500/img/Rectangle_54@2x.png"></a></div>
+         <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="http://127.0.0.1:5500/img/Rectangle_54@2x.png" data-lightbox="photos"><img class="img-fluid" src="http://127.0.0.1:5500/img/Rectangle_54@2x.png"></a></div>
+     </div>
+ </div>
+</div>
+     </div>
+     
      <!-- akhir container -->
     </div>
 
@@ -173,11 +221,81 @@
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
       crossorigin="anonymous"
     ></script>
+    <script>
+     // Open the Modal
+     function openModal() {
+       document.getElementById("myModal").style.display = "block";
+     }
+     
+     // Close the Modal
+     function closeModal() {
+       document.getElementById("myModal").style.display = "none";
+     }
+     
+     var slideIndex = 1;
+     showSlides(slideIndex);
+     
+     // Next/previous controls
+     function plusSlides(n) {
+       showSlides(slideIndex += n);
+     }
+     
+     // Thumbnail image controls
+     function currentSlide(n) {
+       showSlides(slideIndex = n);
+     }
+     
+     function showSlides(n) {
+       var i;
+       var slides = document.getElementsByClassName("mySlides");
+       var dots = document.getElementsByClassName("demo");
+       var captionText = document.getElementById("caption");
+       if (n > slides.length) {slideIndex = 1}
+       if (n < 1) {slideIndex = slides.length}
+       for (i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none";
+       }
+       for (i = 0; i < dots.length; i++) {
+         dots[i].className = dots[i].className.replace(" active", "");
+       }
+       slides[slideIndex-1].style.display = "block";
+       dots[slideIndex-1].className += " active";
+       captionText.innerHTML = dots[slideIndex-1].alt;
+     }
+     </script>
+    <script>
+    $(document).ready(function()
+    {
+     $(".owl-carousel").owlCarousel();
+    });
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:false
+        }
+    }
+})
+</script>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
       crossorigin="anonymous"
     ></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
