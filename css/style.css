@@ -106,6 +106,9 @@
 .konten {
   border-radius: 10px;
 }
+.carousel-control-prev {
+  color: #ed1d24;
+}
 .nav-item,
 .dropdown-item {
   font-family: Open Sans;
