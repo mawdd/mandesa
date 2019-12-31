@@ -86,8 +86,12 @@
 .karir {
   animation-delay: 3s;
 }
+.karir img {
+  padding: 8px;
+}
 .section {
   margin-top: 60px;
+  padding: 40px;
 }
 
 .grid-content img {
@@ -105,6 +109,10 @@
 }
 .konten {
   border-radius: 10px;
+}
+.konten img {
+  padding: 8px;
+  margin-top: 12px;
 }
 .carousel-control-prev {
   color: #ed1d24;
@@ -361,7 +369,6 @@ img.hover-shadow {
 }
 .card {
   border-radius: 10px;
-  border: 1px solid #eee;
   margin: 0;
   padding: 0;
   -webkit-transition: 0.3s;
@@ -370,4 +377,18 @@ img.hover-shadow {
 }
 .card img {
   border-radius: 30px;
+  padding: 18px;
+}
+.carousel {
+  border-radius: 10px;
+}
+.carousel:hover {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.panel {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+}
+.fa-facebook:hover {
+  color: #2196f3;
 }
